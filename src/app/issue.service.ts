@@ -23,7 +23,6 @@ export class IssueService {
     let isoTime = (new Date(copiedDate.getTime() - tzoffset)).toISOString();
 
     return `https://api.github.com/repos/angular/angular/issues?since=${isoTime}`;
-    //return 'xxx';
   }
 
 }

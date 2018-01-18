@@ -14,7 +14,7 @@ describe('IssueService', () => {
         HttpClientTestingModule,
         HttpClientModule
       ],
-      providers: [IssueService]
+      providers: [ IssueService ]
     });
 
     issueService = TestBed.get(IssueService);
