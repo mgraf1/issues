@@ -1,15 +1,17 @@
-<h1>This Week's Angular Issues</h1>
-<table>
-  <tr>
-    <th>Title</th>
-    <th>User</th>
-    <th>Assignee</th>
-    <th>Body</th>
-  </tr>
-  <tr *ngFor="let issue of issues">
-    <td>{{issue.title}}</td>
-    <td>{{issue.user?.login}}</td>
-    <td>{{issue.assignee?.login}}</td>
-    <td>{{issue.body}}</td>
-  </tr>
-</table>
+<div class="container">
+  <h1>This Week's Angular Issues</h1>
+  <table class="table table-striped table-responsive">
+    <tr>
+      <th>Title</th>
+      <th>User</th>
+      <th>Assignee</th>
+      <th>Body</th>
+    </tr>
+    <tr *ngFor="let issue of issues">
+      <td>{{issue.title}}</td>
+      <td>{{issue.user?.login}}</td>
+      <td>{{issue.assignee?.login}}</td>
+      <td>{{issue.body}}</td>
+    </tr>
+  </table>
+</div>
