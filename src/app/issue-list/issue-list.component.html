@@ -11,7 +11,7 @@
       <td>{{issue.title}}</td>
       <td>{{issue.user?.login}}</td>
       <td>{{issue.assignee?.login}}</td>
-      <td>{{issue.body}}</td>
+      <td><showdown [value]="issue.body"></showdown></td>
     </tr>
   </table>
 </div>

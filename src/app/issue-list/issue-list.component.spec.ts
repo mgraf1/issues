@@ -4,6 +4,7 @@ import { IssueListComponent } from './issue-list.component';
 import { IssueService } from '../issue.service';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { ShowdownModule } from 'ngx-showdown';
 
 describe('IssueListComponent', () => {
   let component: IssueListComponent;
@@ -15,7 +16,8 @@ describe('IssueListComponent', () => {
       providers: [ IssueService ],
       imports: [
         HttpModule,
-        HttpClientModule
+        HttpClientModule,
+        ShowdownModule
       ]
     })
     .compileComponents();

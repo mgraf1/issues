@@ -5,6 +5,7 @@ import { IssueService } from './issue.service';
 import { HttpClient } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { ShowdownModule } from 'ngx-showdown';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -19,7 +20,8 @@ describe('AppComponent', () => {
       ],
       imports: [
         HttpModule,
-        HttpClientModule
+        HttpClientModule,
+        ShowdownModule
       ]
     }).compileComponents();
   }));
