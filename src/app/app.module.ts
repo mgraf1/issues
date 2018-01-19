@@ -5,14 +5,16 @@ import { AlertModule } from 'ngx-bootstrap';
 import { ShowdownModule } from 'ngx-showdown';
 
 import { AppComponent } from './app.component';
-import { IssueListComponent } from './issue-list/issue-list.component';
+import { IssueListComponent } from './issue/issue-list.component';
 import { IssueService } from './issue.service';
+import { IssueComponent } from './issue/issue.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    IssueListComponent
+    IssueComponent,
+    IssueListComponent,
   ],
   imports: [
     BrowserModule,

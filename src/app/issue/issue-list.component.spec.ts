@@ -5,6 +5,7 @@ import { IssueService } from '../issue.service';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { ShowdownModule } from 'ngx-showdown';
+import { IssueComponent } from './issue.component';
 
 describe('IssueListComponent', () => {
   let component: IssueListComponent;
@@ -12,7 +13,10 @@ describe('IssueListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IssueListComponent ],
+      declarations: [
+        IssueListComponent,
+        IssueComponent
+      ],
       providers: [ IssueService ],
       imports: [
         HttpModule,
