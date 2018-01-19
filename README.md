@@ -10,6 +10,7 @@ npm install -g @angular/cli
 ```
 Once it's installed, be sure to run
 ```
+cd issues
 npm install
 ```
 
