@@ -4,8 +4,7 @@ import { Issue } from '../models/issue';
 
 @Component({
   selector: 'app-issue-list',
-  templateUrl: './issue-list.component.html',
-  styleUrls: ['./issue-list.component.css']
+  templateUrl: './issue-list.component.html'
 })
 export class IssueListComponent implements OnInit {
   private issues: Issue[];

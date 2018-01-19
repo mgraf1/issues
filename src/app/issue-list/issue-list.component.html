@@ -1,17 +1,21 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 <div class="container">
-  <h1>This Week's Angular Issues</h1>
-  <table class="table table-striped table-responsive">
-    <tr>
-      <th>Title</th>
-      <th>User</th>
-      <th>Assignee</th>
-      <th>Body</th>
-    </tr>
-    <tr *ngFor="let issue of issues">
-      <td>{{issue.title}}</td>
-      <td>{{issue.user?.login}}</td>
-      <td>{{issue.assignee?.login}}</td>
-      <td><showdown [value]="issue.body"></showdown></td>
-    </tr>
-  </table>
+  <h1 class="display-1">This Week's Angular Issues</h1>
+  <div *ngFor="let issue of issues" class="panel panel-primary">
+    <div class="panel-heading">
+      <h1 class="display-6 title">{{issue.title}}</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="display-5" *ngIf="issue.user && issue.user.login">User: {{issue.user.login}}</h2>
+        </div>
+        <div class="col-md-6">
+          <h2 class="display-5">Assignee: {{(issue && issue.assignee) ? issue.assignee.login : 'Unassigned'}}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="panel-body">
+      <showdown [value]="issue.body"></showdown>
+    </div>
+  </div>
 </div>
+
