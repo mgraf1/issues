@@ -2,9 +2,23 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
 
+## Prereqs
+
+The angular-cli must be installed to run the application. It can be installed with
+```
+npm install -g @angular/cli
+```
+Once it's installed, be sure to run
+```
+npm install
+```
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. Depending on the version on nodejs installed, you may need to install @angular-devkit/core. It can be done with
+```
+npm install @angular-devkit/core
+```
 
 ## Code scaffolding
 
